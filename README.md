@@ -1,3 +1,20 @@
-# Fisheye correction config script
+# Fisheye Camera Calibration
 
-Script responsible for creating .yaml file with data for opencv
+Minimal script for fisheye camera calibration using OpenCV.
+
+## Setup
+Install dependencies:
+
+`pip install -r requirements.txt `
+
+## Data Preparation
+Capture multiple images of a checkerboard pattern.
+Place them in the images/ directory.
+Adjust parameters in the script if needed:
+CHECKERBOARD – number of inner corners (e.g. (7, 5))
+SQUARE_SIZE – square size in mm
+
+## Run
+`python calibrate.py`
+
+It would generate `config.yaml`
