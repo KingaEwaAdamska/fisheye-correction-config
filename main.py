@@ -3,10 +3,10 @@ import numpy as np
 import glob
 import yaml
 
-CHECKERBOARD = (11, 8)
-SQUARE_SIZE = 15  # mm
+CHECKERBOARD = (7, 5)
+SQUARE_SIZE = 30  # mm
 IMAGE_PATH = "images/*.jpg"
-OUTPUT_FILE = "camera.yaml"
+OUTPUT_FILE = "config.yaml"
 
 subpix_criteria = (
     cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER,
